@@ -1,13 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import "@styles/index.css";
+import "@styles/custom.css";
+
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+
+import "@assets/fonts/Lora-SemiBold.ttf";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      {" "}
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
