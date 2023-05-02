@@ -22,8 +22,8 @@ function Login(props) {
       props.setUser(user);
       navigator("/");
     }
-    console.log(user);
-    console.log(props.isLoggedIn);
+    //console.log(user);
+    //console.log(props.isLoggedIn);
   }, [navigator, props, props.isLoggedIn, user]);
 
   const fetchUser = async () => {
@@ -44,7 +44,7 @@ function Login(props) {
         });
       }
     } catch (e) {
-      console.log(e);
+      //console.log(e);
       alert("มีบางอย่างผิดพลาด");
     }
   };

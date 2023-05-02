@@ -19,10 +19,10 @@ function App() {
   const handleLogin = (userData) => {
     setUser(userData);
     setIsLoggedIn(true);
-    console.log(isLoggedIn);
+    //console.log(isLoggedIn);
   };
   useEffect(() => {
-    console.log(user);
+    //console.log(user);
   }, [user]);
 
   const handleLogout = () => {
