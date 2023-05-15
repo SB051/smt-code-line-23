@@ -36,7 +36,7 @@ function Header(props) {
             </svg>
           </a>
           <Link to={"/random"}>คำใบ้พี่รหัส</Link>
-          <lable>{props.name}</lable>
+          <label>{props.name}</label>
         </div>
         <button
           className="absolute right-4 my-[12px] flex h-[36px] w-[36px] items-center justify-center rounded-md border border-neutral-600 text-neutral-400 md:hidden"
@@ -82,7 +82,7 @@ function Header(props) {
                 หน้าแรก
               </Link>
               <a
-                href="https:www.google.com/"
+                href="https://line.me/ti/g/axPJ1GQTA5"
                 onClick={() => setIsMenuOpen(false)}
                 className="flex py-4 text-2xl  text-gray-700 hover:text-gray-900"
               >
@@ -111,9 +111,9 @@ function Header(props) {
               >
                 คำใบ้พี่รหัส
               </Link>
-              <lable className="py-4 text-2xl font-bold text-gray-700 hover:text-gray-900">
+              <label className="py-4 text-2xl font-bold text-gray-700 hover:text-gray-900">
                 {props.name}
-              </lable>
+              </label>
             </div>
           </div>
         </div>

@@ -6,6 +6,7 @@ import Home from "@pages/Home";
 import Login from "@pages/Login";
 import NotFound from "./pages/NotFound/NotFound";
 import Random from "@pages/Random";
+import NameList from "./pages/NameList/NameList";
 
 import ProtectedRoute from "@components/ProtectedRoute/ProtectedRoute";
 
@@ -47,6 +48,14 @@ function App() {
           element={
             <ProtectedRoute isAllowed={user.name !== ""}>
               <Random hint={user.hint} name={user.name} id={user.id} />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/namelists"
+          element={
+            <ProtectedRoute isAllowed={user.name !== ""}>
+              <NameList />
             </ProtectedRoute>
           }
         />

@@ -1,18 +1,21 @@
 import { useState, useEffect } from "react";
 import { db, rt } from "../../firebase";
 import { remove, ref, onValue } from "firebase/database";
+import { doc, updateDoc } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
 
 import bgSMT from "@assets/images/bgSMT.png";
 import mobileBG from "@assets/images/mobileBG.png";
 
 import Threedots from "@components/Threedots";
-import { doc, updateDoc } from "firebase/firestore";
 
 function Random(props) {
   const [randomState, setRandomState] = useState("loading");
   const [hintz, setHintz] = useState("");
   const [selectedHint, setSelectedHint] = useState("");
   const [hintText, setHintText] = useState("");
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (props.hint !== "") {
@@ -102,8 +105,13 @@ function Random(props) {
             สุ่มเลย!
           </button>
         </div>
-        <button className="flex text-white">
-          ดูข้อมูลพี่รหัส
+        <button
+          className="flex text-white"
+          onClick={() => {
+            navigate("/namelists");
+          }}
+        >
+          ดูข้อมูลรุ่นพี่
           <svg
             className="ml-1"
             xmlns="http://www.w3.org/2000/svg"

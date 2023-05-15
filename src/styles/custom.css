@@ -36,3 +36,43 @@
 .speeddots .dot:nth-last-child(3) {
   animation: jumpingAnimation 0.25s 0.3s ease-in infinite;
 }
+
+.flip-clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.flip-clock__unit {
+  margin: 0 0.5rem;
+}
+
+.flip-clock__unit__digit {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.flip-clock__unit__digit:before,
+.flip-clock__unit__digit:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background-color: #000;
+}
+
+.flip-clock__unit__digit:before {
+  top: 0;
+}
+
+.flip-clock__unit__digit:after {
+  bottom: 0;
+}
