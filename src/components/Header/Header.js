@@ -16,7 +16,10 @@ function Header(props) {
         </div>
         <div className="hidden md:absolute md:right-4 md:top-0 md:my-[16px] md:flex md:space-x-8 md:text-lg md:text-white">
           <Link to={"/"}>หน้าแรก</Link>
-          <a href="https:www.google.com/" className="flex">
+          <a
+            href="https://line.me/ti/g2/IwhWZp6C3gAfsDybF6i8jWZjI0nh4EIMMSsy9Q?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+            className="flex"
+          >
             Openchat{" "}
             <svg
               className="ml-1"
@@ -82,7 +85,7 @@ function Header(props) {
                 หน้าแรก
               </Link>
               <a
-                href="https://line.me/ti/g/axPJ1GQTA5"
+                href="https://line.me/ti/g2/IwhWZp6C3gAfsDybF6i8jWZjI0nh4EIMMSsy9Q?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
                 onClick={() => setIsMenuOpen(false)}
                 className="flex py-4 text-2xl  text-gray-700 hover:text-gray-900"
               >
