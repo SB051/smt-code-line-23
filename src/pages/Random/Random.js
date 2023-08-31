@@ -14,6 +14,7 @@ function Random(props) {
   const [hintz, setHintz] = useState("");
   const [selectedHint, setSelectedHint] = useState("");
   const [hintText, setHintText] = useState("");
+  const [isClicked, setIsClicked] = useState(false);
 
   const navigate = useNavigate();
 
@@ -97,8 +98,10 @@ function Random(props) {
             {randomState === "show" && hintText}
           </span>
           <button
+            disabled={isClicked}
             className="rounded-xl bg-sky-950 px-6 py-2 text-white"
             onClick={() => {
+              setIsClicked(true);
               handleHint();
             }}
           >
